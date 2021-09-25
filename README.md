@@ -1,4 +1,4 @@
-# Example VPC with SSH access and Bastion Host for Redhat Ansible
+# Multi-tier VPC with bastion and VSIs
 
 This Terraform example for IBM Cloud Schematics illustrates how to
 deploy an IBM Cloud Gen2 VPC with a bastion host to provide secure
