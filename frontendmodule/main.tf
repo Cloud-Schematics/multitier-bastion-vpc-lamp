@@ -12,6 +12,13 @@
 # defined in the site.yml playbook file. 
 ##############################################################################
 
+terraform {
+  required_providers {
+    ibm = {
+      source  = "IBM-Cloud/ibm"
+    }
+  }
+}
 
 resource "ibm_is_instance" "frontend-server" {
   count   = var.frontend_count

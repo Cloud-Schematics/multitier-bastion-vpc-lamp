@@ -6,6 +6,15 @@
 # Separately setup up any required load balancers, listeners, pools and members
 ##############################################################################
 
+terraform {
+  required_providers {
+    ibm = {
+      source  = "IBM-Cloud/ibm"
+    }
+  }
+}
+
+
 ##############################################################################
 # Create a VPC
 ##############################################################################

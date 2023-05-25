@@ -9,6 +9,15 @@
 # other VPC configurations  
 ##############################################################################
 
+terraform {
+  required_providers {
+    ibm = {
+      source  = "IBM-Cloud/ibm"
+    }
+  }
+}
+
+
 
 resource "ibm_is_instance" "bastion" {
   count   = var.bastion_count
