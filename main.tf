@@ -103,5 +103,5 @@ module "accesscheck" {
   ssh_accesscheck = var.ssh_accesscheck
   ssh_private_key = var.ssh_private_key
   bastion_host    = module.bastion.bastion_ip_addresses[0]
-  target_hosts    = concat(module.frontend.primary_ipv4_address, module.backend.primary_ipv4_address)
+  target_hosts    = module.frontend.primary_ipv4_address
 }

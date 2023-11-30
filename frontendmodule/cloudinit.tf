@@ -1,4 +1,4 @@
-data "template_cloudinit_config" "app_userdata" {
+data "cloudinit_config" "app_userdata" {
   base64_encode = false
   gzip          = false
 
